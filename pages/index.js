@@ -1,26 +1,17 @@
-import { ScrollingProvider, SectionLink, Section } from "react-scroll-section";
+import styled from 'styled-components';
+import { ScrollingProvider } from 'react-scroll-section';
+import Menu from '../components/Menu';
+import { Footer } from '../components/Builders';
+import Sections from '../components/Sections';
 
-const App = () => (
-  <ScrollingProvider>
-    <div>
-      <SectionLink section="home">
-        {({ onClick, isSelected }) => (
-          <Item onClick={onClick} selected={isSelected}>
-            Home
-          </Item>
-        )}
-      </SectionLink>
-      <SectionLink section="about">
-        {({ onClick, isSelected }) => (
-          <Item onClick={onClick} selected={isSelected}>
-            About
-          </Item>
-        )}
-      </SectionLink>
-    </div>
-    <Section id="home">Home section</Section>
-    <Section id="about">About section</Section>
-  </ScrollingProvider>
-);
-
-export default App;
+export default function Home() {
+  return (
+    <ScrollingProvider scrollBehavior='smooth'>
+      <Menu />
+      <Sections />
+      <Footer>
+        <a href='https://filipahfelt.se'>Copyright © 2020 Filip Åhfelt</a>
+      </Footer>
+    </ScrollingProvider>
+  );
+}
