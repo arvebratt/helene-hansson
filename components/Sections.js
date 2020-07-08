@@ -8,17 +8,17 @@ import Contact from './Sections/Contact';
 const Sections = () => (
   <Fragment>
     <Section id='home'>
-      <SectionContainer>
+      <SectionContainer background="accent3">
         <Home />
       </SectionContainer>
     </Section>
     <Section id='faq'>
-      <SectionContainer>
+      <SectionContainer background="accent2">
         <Faq />
       </SectionContainer>
     </Section>
     <Section id='contact'>
-      <SectionContainer>
+      <SectionContainer background="accent3">
         <Contact />
       </SectionContainer>
     </Section>
