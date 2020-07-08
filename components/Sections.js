@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Section } from 'react-scroll-section';
 import { SectionContainer } from './Builders';
-import Home from './Sections/Home';
-import Faq from './Sections/Faq';
-import Contact from './Sections/Contact';
+import Home from './sections/Home';
+import Faq from './sections/Faq';
+import Contact from './sections/Contact';
 
 const Sections = () => (
   <Fragment>
