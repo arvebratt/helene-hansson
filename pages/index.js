@@ -10,7 +10,7 @@ export default function Home() {
       <Menu />
       <Sections />
       <Footer>
-        <a href='https://filipahfelt.se'>Copyright © 2020 Filip Åhfelt</a>
+        <a href='https://arvebratt.com'>Copyright © 2020 Alexander Arvebratt</a>
       </Footer>
     </ScrollingProvider>
   );

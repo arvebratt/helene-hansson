@@ -19,12 +19,13 @@ scroll-snap-type: y proximity;
 `;
 
 const theme = {
-  background: '##FAFAF2',
-  text: '##231F20',
-  accent1: '#FEAC92',
-  accent2: '#d8dee9',
-  accent3: '#8fbcbb',
-  accent4: '#81a1c1',
+  background: '#FAFAF2',
+  text: '#414042',
+  accent1: '#ffe5d9',
+  accent2: '#ffcad4',
+  accent3: '#f4acb7',
+  accent4: '#9d8189',
+  accent5: '#d8e2dc',
   colors: {
     primary: '#0070f3',
   },

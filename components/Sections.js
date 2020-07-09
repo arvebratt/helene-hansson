@@ -8,7 +8,7 @@ import Contact from './sections/Contact';
 const Sections = () => (
   <Fragment>
     <Section id='home'>
-      <SectionContainer background="accent3">
+      <SectionContainer background="accent1">
         <Home />
       </SectionContainer>
     </Section>
