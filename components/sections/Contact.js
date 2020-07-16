@@ -159,7 +159,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  font-size: 1rem;
+  font-size: 1.1rem;
 
   @media screen and (max-width: 600px) {
     font-size: 0.75rem;

@@ -88,7 +88,7 @@ const UnderTitle = styled.h1`
 `;
 
 const Description = styled.p`
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: left;
   @media screen and (max-width: 768px) {
   }
