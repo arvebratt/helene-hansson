@@ -5,8 +5,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 const GlobalStyle = createGlobalStyle`
 html { /* body won't work ¯\_(ツ)_/¯ */
 scroll-behavior: smooth;
-scroll-snap-type: y proximity;
-
+scroll-snap-type: y mandatory;
 }
   body {
     margin: 0;

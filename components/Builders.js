@@ -28,6 +28,7 @@ export const Item = styled.li`
 `;
 
 export const SectionContainer = styled.section`
+  scroll-snap-align: start;
   min-height: 100vh;
   min-width: 320px;
   display: flex;
