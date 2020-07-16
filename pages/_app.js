@@ -19,13 +19,13 @@ scroll-snap-type: y proximity;
 `;
 
 const theme = {
-  background: '#FAFAF2',
-  text: '#414042',
-  accent1: '#ffe5d9',
-  accent2: '#ffcad4',
-  accent3: '#f4acb7',
-  accent4: '#9d8189',
-  accent5: '#d8e2dc',
+  background: '#EDEAE5',
+  text: '#2F3640',
+  accent1: 'linear-gradient(195deg, #fdfcfb 0%,#e2d1c3 50%, #e2d1c3 100%);#e2d1c3',
+  accent2: '#e2d1c3',
+  accent3: 'linear-gradient(15deg, #fdfcfb 0%,#e2d1c3 50%, #e2d1c3 100%);#e2d1c3',
+  accent4: '#2E3F7F',
+  accent5: '#404040',
   colors: {
     primary: '#0070f3',
   },

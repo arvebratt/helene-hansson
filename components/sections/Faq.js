@@ -1,49 +1,99 @@
-import styled from 'styled-components';
+import { Container, Grid } from "@material-ui/core";
+import styled from "styled-components";
 
 const Faq = () => {
   return (
-    <Container>
-      <Title>Helene Hansson 2</Title>
-      <Description>do what u want</Description>
-    </Container>
+    <StyledContainer>
+      <Grid container>
+        <Grid item xs={12} sm={12} lg={12}>
+          <Title>Om mig</Title>
+        </Grid>
+        <Grid item xs={12} sm={12} lg={12}>
+          <Description>
+            Jag arbetar som socionom i det offentligas tjänst och har arbetat
+            inom de flesta områdena inom socialtjänsten varav de senaste tio
+            åren med äldreomsorg. Sedan i höstas arbetar jag med innovation av
+            hälso- och sjukvård.
+            <br/><br/>
+            Jag och min familj tillbringar gärna vår fritid i naturen, antingen
+            i vår koloni eller i Härjedalen där vi har en stuga. Musik, kultur
+            och natur är mina största intressen.
+            <br/><br/>
+            Jag är enklast att nå via epost: Helen.hansson55@gmail.com
+            <br/><br/>
+            Välkommen att ta kontakt!
+          </Description>
+        </Grid>
+      </Grid>
+    </StyledContainer>
   );
 };
 
 export default Faq;
 
-const Container = styled.div`
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-`;
+const StyledContainer = styled(Container)`
+  position: absolute;
+  top: 115%;
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 
-const Logo = styled.img`
-  margin-top: 8rem;
-  height: 30rem;
   @media screen and (max-width: 768px) {
-    height: 15rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media screen and (max-width: 600px) {
+    top: 110%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 `;
 
 const Title = styled.h1`
-  margin: 0;
-  font-size: 4rem;
+  color: ${(props) => props.theme.accent4};
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  font-size: 4rem !important;
+  text-align: left;
+
   @media screen and (max-width: 768px) {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2.5rem !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 2rem !important;
   }
 `;
 
-const Status = styled.p`
-  margin: 0;
-  margin-top: 1rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #ebcb8b;
+const UnderTitle = styled.h1`
+  color: ${(props) => props.theme.accent5};
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 3rem !important;
+  text-align: left;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 1.75rem !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+    font-size: 1.75rem !important;
+  }
 `;
+
 const Description = styled.p`
-  margin-top: 0.5rem;
-  margin-bottom: 5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.75rem;
+  }
 `;
